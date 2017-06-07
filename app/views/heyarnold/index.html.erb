@@ -1,0 +1,9 @@
+<h1> Harry Potter </h1>
+
+<% @hey_arnold_stuffs.each do |hey_arnold_stuff| %>
+  <h2><a href="/hey_arnold/<%= hey_arnold_stuff["id"] %>"> <%= hey_arnold_stuff["character"] %></h2>
+  <br>
+
+<% end %> 
+
+<%= link_to "New", "/hey_arnold/new" %>
